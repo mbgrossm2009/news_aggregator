@@ -1,0 +1,5 @@
+<h1> Here is a list of all your articles </h1>
+
+<% @articles.each do |article| %>
+  <p><%= "Title: #{article[0]}" %>  <a href=<%= article[1] %>><%= "URL:#{article[1]}" %></a> <%= "Description:#{article[2]}" %></p>
+<% end %>
